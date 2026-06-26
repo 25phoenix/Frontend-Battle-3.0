@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusFlow — AI-Driven Data Automation Platform</title>
+  <meta name="description" content="NexusFlow automates data pipelines with next-gen AI. Scale workflows, sync integrations, and ship insights faster with enterprise-grade automation.">
+  <meta name="keywords" content="AI automation, data platform, workflow automation, SaaS, NexusFlow">
+  <meta name="author" content="NexusFlow">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NexusFlow — AI-Driven Data Automation Platform">
+  <meta property="og:description" content="Automate data pipelines with AI. Build, deploy, and scale intelligent workflows in minutes.">
+  <meta property="og:url" content="https://nexusflow.ai">
+  <meta property="og:site_name" content="NexusFlow">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NexusFlow — AI-Driven Data Automation Platform">
+  <meta name="twitter:description" content="Automate data pipelines with AI. Build, deploy, and scale intelligent workflows in minutes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img src="assets/svg/cube-16-solid.svg" alt="" width="32" height="32" class="loader__icon">
+      <span class="loader__text">NexusFlow</span>
+    </div>
+    <span class="loader__progress" aria-hidden="true"></span>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#" class="nav__brand" aria-label="NexusFlow home">
+        <img src="assets/svg/cube-16-solid.svg" alt="" width="24" height="24" class="nav__logo">
+        <span>NexusFlow</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <img src="assets/svg/cog-8-tooth.svg" alt="" width="20" height="20" class="nav__toggle-icon nav__toggle-icon--open">
+        <img src="assets/svg/x-mark.svg" alt="" width="20" height="20" class="nav__toggle-icon nav__toggle-icon--close">
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing" class="nav__cta">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+      <div class="container hero__layout entry-item">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal-stagger">
+            <img src="assets/svg/arrow-trending-up.svg" alt="" width="16" height="16">
+            Next-Gen AI Platform
+          </p>
+          <h1 id="hero-heading" class="hero__title reveal-stagger">Automate your data.<br><span class="hero__accent">Accelerate everything.</span></h1>
+          <p class="hero__subtitle reveal-stagger">NexusFlow transforms raw data into actionable intelligence with AI-driven pipelines, real-time sync, and enterprise-grade automation — built for teams that move fast.</p>
+          <div class="hero__actions reveal-stagger">
+            <a href="#pricing" class="btn btn--primary">
+              Start Free Trial
+              <img src="assets/svg/chevron-right.svg" alt="" width="16" height="16">
+            </a>
+            <a href="#features" class="btn btn--ghost">
+              <img src="assets/svg/search.svg" alt="" width="16" height="16">
+              Explore Features
+            </a>
+          </div>
+          <dl class="hero__stats reveal-stagger">
+            <div class="hero__stat">
+              <dt>10M+</dt>
+              <dd>Records processed daily</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>99.9%</dt>
+              <dd>Uptime SLA</dd>
+            </div>
+            <div class="hero__stat">
+              <dt>3×</dt>
+              <dd>Faster deployment</dd>
+            </div>
+          </dl>
+          <a href="#features" class="hero__scroll reveal-stagger" aria-label="Scroll to features">
+            <img src="assets/svg/chevron-up.svg" alt="" width="20" height="20">
+          </a>
+        </div>
+
+        <div class="hero__stage reveal-stagger" id="hero-stage" aria-hidden="true">
+          <canvas id="hero-canvas" class="hero__canvas"></canvas>
+          <div class="hero__stage-glow" aria-hidden="true"></div>
+
+          <div class="hero__float-card hero__float-card--sync" data-depth="14">
+            <img src="assets/svg/arrow-path.svg" alt="" width="18" height="18">
+            <div>
+              <strong>Live Sync</strong>
+              <span>847 nodes active</span>
+            </div>
+          </div>
+
+          <div class="hero__float-card hero__float-card--analytics" data-depth="22">
+            <img src="assets/svg/chart-pie.svg" alt="" width="18" height="18">
+            <div>
+              <strong>Throughput</strong>
+              <span>2.4M rows/sec</span>
+            </div>
+          </div>
+
+          <div class="hero__float-card hero__float-card--pipeline" data-depth="18">
+            <img src="assets/svg/cube-16-solid.svg" alt="" width="18" height="18">
+            <div>
+              <strong>Pipelines</strong>
+              <span>128 deployed</span>
+            </div>
+          </div>
+
+          <p class="hero__stage-hint">
+            <img src="assets/svg/cog-8-tooth.svg" alt="" width="14" height="14">
+            Drag to rotate · Move to explore
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features reveal-section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <header class="section-header entry-item reveal-item">
+          <p class="section-eyebrow">Core Capabilities</p>
+          <h2 id="features-heading">Built for technical teams</h2>
+          <p class="section-desc">Every module is engineered for speed, observability, and seamless integration across your stack.</p>
+        </header>
+
+        <!-- Desktop Bento Grid -->
+        <div class="bento" id="bento-grid" role="list" aria-label="Platform features">
+          <article class="bento__node bento__node--large reveal-item" role="listitem" data-feature-index="0" tabindex="0">
+            <img src="assets/svg/chart-pie.svg" alt="" width="28" height="28" class="bento__icon">
+            <h3>Real-Time Analytics</h3>
+            <p>Live dashboards with sub-second query latency. Monitor pipeline health, throughput, and anomaly detection from a unified control plane.</p>
+          </article>
+          <article class="bento__node reveal-item" role="listitem" data-feature-index="1" tabindex="0">
+            <img src="assets/svg/arrow-path.svg" alt="" width="24" height="24" class="bento__icon">
+            <h3>Auto-Sync Pipelines</h3>
+            <p>Bi-directional data sync with conflict resolution and incremental updates across 200+ connectors.</p>
+          </article>
+          <article class="bento__node reveal-item" role="listitem" data-feature-index="2" tabindex="0">
+            <img src="assets/svg/link-solid.svg" alt="" width="24" height="24" class="bento__icon">
+            <h3>Native Integrations</h3>
+            <p>One-click connections to Snowflake, BigQuery, Postgres, and REST APIs with schema-aware mapping.</p>
+          </article>
+          <article class="bento__node bento__node--wide reveal-item" role="listitem" data-feature-index="3" tabindex="0">
+            <img src="assets/svg/cog-8-tooth.svg" alt="" width="24" height="24" class="bento__icon">
+            <h3>Workflow Orchestration</h3>
+            <p>Visual DAG builder with conditional branching, retry policies, and version-controlled deployment pipelines for production-grade automation.</p>
+          </article>
+          <article class="bento__node reveal-item" role="listitem" data-feature-index="4" tabindex="0">
+            <img src="assets/svg/search.svg" alt="" width="24" height="24" class="bento__icon">
+            <h3>Smart Discovery</h3>
+            <p>AI-powered schema inference and data cataloging that surfaces lineage and quality scores automatically.</p>
+          </article>
+          <article class="bento__node reveal-item" role="listitem" data-feature-index="5" tabindex="0">
+            <img src="assets/svg/link.svg" alt="" width="24" height="24" class="bento__icon">
+            <h3>Webhook Engine</h3>
+            <p>Event-driven triggers with signed payloads, rate limiting, and dead-letter queues for reliable delivery.</p>
+          </article>
+        </div>
+
+        <!-- Mobile Accordion -->
+        <div class="accordion reveal-item" id="feature-accordion" aria-label="Platform features">
+          <div class="accordion__item" data-accordion-index="0">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-0" id="accordion-trigger-0">
+              <span class="accordion__trigger-content">
+                <img src="assets/svg/chart-pie.svg" alt="" width="20" height="20">
+                Real-Time Analytics
+              </span>
+              <img src="assets/svg/chevron-down.svg" alt="" width="16" height="16" class="accordion__chevron">
+            </button>
+            <div class="accordion__panel" id="accordion-panel-0" role="region" aria-labelledby="accordion-trigger-0" aria-hidden="true">
+              <p>Live dashboards with sub-second query latency. Monitor pipeline health, throughput, and anomaly detection from a unified control plane.</p>
+            </div>
+          </div>
+          <div class="accordion__item" data-accordion-index="1">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-1" id="accordion-trigger-1">
+              <span class="accordion__trigger-content">
+                <img src="assets/svg/arrow-path.svg" alt="" width="20" height="20">
+                Auto-Sync Pipelines
+              </span>
+              <img src="assets/svg/chevron-down.svg" alt="" width="16" height="16" class="accordion__chevron">
+            </button>
+            <div class="accordion__panel" id="accordion-panel-1" role="region" aria-labelledby="accordion-trigger-1" aria-hidden="true">
+              <p>Bi-directional data sync with conflict resolution and incremental updates across 200+ connectors.</p>
+            </div>
+          </div>
+          <div class="accordion__item" data-accordion-index="2">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-2" id="accordion-trigger-2">
+              <span class="accordion__trigger-content">
+                <img src="assets/svg/link-solid.svg" alt="" width="20" height="20">
+                Native Integrations
+              </span>
+              <img src="assets/svg/chevron-down.svg" alt="" width="16" height="16" class="accordion__chevron">
+            </button>
+            <div class="accordion__panel" id="accordion-panel-2" role="region" aria-labelledby="accordion-trigger-2" aria-hidden="true">
+              <p>One-click connections to Snowflake, BigQuery, Postgres, and REST APIs with schema-aware mapping.</p>
+            </div>
+          </div>
+          <div class="accordion__item" data-accordion-index="3">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-3" id="accordion-trigger-3">
+              <span class="accordion__trigger-content">
+                <img src="assets/svg/cog-8-tooth.svg" alt="" width="20" height="20">
+                Workflow Orchestration
+              </span>
+              <img src="assets/svg/chevron-down.svg" alt="" width="16" height="16" class="accordion__chevron">
+            </button>
+            <div class="accordion__panel" id="accordion-panel-3" role="region" aria-labelledby="accordion-trigger-3" aria-hidden="true">
+              <p>Visual DAG builder with conditional branching, retry policies, and version-controlled deployment pipelines for production-grade automation.</p>
+            </div>
+          </div>
+          <div class="accordion__item" data-accordion-index="4">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-4" id="accordion-trigger-4">
+              <span class="accordion__trigger-content">
+                <img src="assets/svg/search.svg" alt="" width="20" height="20">
+                Smart Discovery
+              </span>
+              <img src="assets/svg/chevron-down.svg" alt="" width="16" height="16" class="accordion__chevron">
+            </button>
+            <div class="accordion__panel" id="accordion-panel-4" role="region" aria-labelledby="accordion-trigger-4" aria-hidden="true">
+              <p>AI-powered schema inference and data cataloging that surfaces lineage and quality scores automatically.</p>
+            </div>
+          </div>
+          <div class="accordion__item" data-accordion-index="5">
+            <button class="accordion__trigger" aria-expanded="false" aria-controls="accordion-panel-5" id="accordion-trigger-5">
+              <span class="accordion__trigger-content">
+                <img src="assets/svg/link.svg" alt="" width="20" height="20">
+                Webhook Engine
+              </span>
+              <img src="assets/svg/chevron-down.svg" alt="" width="16" height="16" class="accordion__chevron">
+            </button>
+            <div class="accordion__panel" id="accordion-panel-5" role="region" aria-labelledby="accordion-trigger-5" aria-hidden="true">
+              <p>Event-driven triggers with signed payloads, rate limiting, and dead-letter queues for reliable delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing reveal-section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <header class="section-header entry-item reveal-item">
+          <p class="section-eyebrow">Transparent Pricing</p>
+          <h2 id="pricing-heading">Scale on your terms</h2>
+          <p class="section-desc">Choose the plan that fits your team. Switch billing cycles or currencies anytime — prices update instantly.</p>
+        </header>
+
+        <div class="pricing__controls entry-item reveal-item" id="pricing-controls">
+          <div class="billing-toggle" role="group" aria-label="Billing cycle">
+            <span class="billing-toggle__indicator" aria-hidden="true"></span>
+            <button type="button" class="billing-toggle__btn billing-toggle__btn--active" data-billing="monthly" aria-pressed="true">Monthly</button>
+            <button type="button" class="billing-toggle__btn" data-billing="annual" aria-pressed="false">
+              Annual
+              <span class="billing-toggle__badge">Save 20%</span>
+            </button>
+          </div>
+
+          <div class="currency-select">
+            <label for="currency-dropdown" class="currency-select__label">Currency</label>
+            <div class="currency-select__wrapper">
+              <select id="currency-dropdown" class="currency-select__input" aria-label="Select currency">
+                <option value="INR">INR (₹)</option>
+                <option value="USD">USD ($)</option>
+                <option value="EUR">EUR (€)</option>
+              </select>
+              <img src="assets/svg/chevron-down.svg" alt="" width="14" height="14" class="currency-select__chevron">
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing__grid entry-item reveal-item" id="pricing-grid">
+          <article class="pricing-card reveal-item" data-tier-id="starter">
+            <h3 class="pricing-card__name">Starter</h3>
+            <p class="pricing-card__desc">For individuals exploring AI automation</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount" data-price-node="starter">₹1,499</span>
+              <span class="pricing-card__period" data-period-node>/mo</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>5 active workflows</li>
+              <li>Basic analytics dashboard</li>
+              <li>Email support</li>
+              <li>1 GB storage</li>
+            </ul>
+            <a href="#" class="btn btn--outline pricing-card__cta">Get Started</a>
+          </article>
+
+          <article class="pricing-card pricing-card--featured reveal-item" data-tier-id="growth">
+            <span class="pricing-card__badge">Most Popular</span>
+            <h3 class="pricing-card__name">Growth</h3>
+            <p class="pricing-card__desc">For teams scaling data pipelines</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount" data-price-node="growth">₹4,999</span>
+              <span class="pricing-card__period" data-period-node>/mo</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Unlimited workflows</li>
+              <li>Advanced analytics & alerts</li>
+              <li>Priority support</li>
+              <li>Full API access</li>
+              <li>50 GB storage</li>
+            </ul>
+            <a href="#" class="btn btn--primary pricing-card__cta">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card reveal-item" data-tier-id="enterprise">
+            <h3 class="pricing-card__name">Enterprise</h3>
+            <p class="pricing-card__desc">For organizations with custom needs</p>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount" data-price-node="enterprise">₹9,999</span>
+              <span class="pricing-card__period" data-period-node>/mo</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Custom integrations</li>
+              <li>Dedicated success manager</li>
+              <li>99.99% SLA guarantee</li>
+              <li>SSO & audit logs</li>
+              <li>Unlimited storage</li>
+            </ul>
+            <a href="#" class="btn btn--outline pricing-card__cta">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials reveal-section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section-header entry-item reveal-item">
+          <p class="section-eyebrow">Social Proof</p>
+          <h2 id="testimonials-heading">Trusted by data teams worldwide</h2>
+        </header>
+
+        <div class="testimonials__track entry-item reveal-item">
+          <blockquote class="testimonial is-active">
+            <p>"NexusFlow cut our ETL deployment time from weeks to hours. The bento-style dashboard alone saved our ops team countless context switches."</p>
+            <footer>
+              <cite>— Priya Sharma, Head of Data @ FinStack</cite>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"We migrated 40 pipelines in a single sprint. The pricing transparency and multi-currency support made procurement painless."</p>
+            <footer>
+              <cite>— Marcus Chen, CTO @ CloudLedger</cite>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Real-time sync with automatic conflict resolution is a game-changer. Our analytics team finally trusts the data layer again."</p>
+            <footer>
+              <cite>— Elena Rodriguez, VP Engineering @ DataPulse</cite>
+            </footer>
+          </blockquote>
+        </div>
+
+        <div class="testimonials__nav entry-item reveal-item" aria-label="Testimonial navigation">
+          <button type="button" class="testimonials__nav-btn" aria-label="Previous testimonial">
+            <img src="assets/svg/chevron-left.svg" alt="" width="16" height="16">
+          </button>
+          <button type="button" class="testimonials__nav-btn" aria-label="Next testimonial">
+            <img src="assets/svg/chevron-right.svg" alt="" width="16" height="16">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/svg/cube-16-solid.svg" alt="" width="20" height="20">
+        <span>NexusFlow</span>
+      </div>
+      <p class="site-footer__copy">&copy; 2026 NexusFlow. All rights reserved.</p>
+      <a href="#site-header" class="site-footer__top" aria-label="Back to top">
+        <img src="assets/svg/chevron-up-solid.svg" alt="" width="16" height="16">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js" defer></script>
+  <script src="js/pricing.js" defer></script>
+  <script src="js/features.js" defer></script>
+  <script src="js/motion.js" defer></script>
+  <script src="js/scene3d.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
